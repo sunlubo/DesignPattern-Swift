@@ -2,6 +2,10 @@
  [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
  ****
  # Abstract Document
+ 
+ The Abstract Document pattern enables handling additional, non-static properties. This pattern uses concept of traits to enable type safety and separate properties of different classes into set of interfaces.
+ 
+ In Abstract Document pattern, `AbstractDocument` fully implements `Document` interface. Traits are then defined to enable access to properties in usual, static way.
  */
 /// HasType trait for static access to 'type' property.
 public protocol HasType: Document {
